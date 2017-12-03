@@ -27,7 +27,7 @@ def Yes(bot, update):
     msg = update.message.text.replace("/Yes", " ").split(" ")
     msg = msg[2:]
     speaker = "".join(msg)
-    url = "http://127.0.0.1:8000/api/event/?format=json"
+    url = "http://ictconf.net/api/event/?format=json"
     params = dict()
     resp = requests.get(url, params=params)
     json_response = json.loads(resp.text)
@@ -55,7 +55,7 @@ def No(bot, update, job_queue):
 
 
 def callback_timer(bot, update, job_queue):
-    url = "http://127.0.0.1:8000/api/event/?format=json"
+    url = "http://ictconf.net/api/event/?format=json"
     params = dict()
     resp = requests.get(url, params=params)
     json_response = json.loads(resp.text)
