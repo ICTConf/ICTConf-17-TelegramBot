@@ -5,7 +5,7 @@ import json
 import datetime
 import requests
 
-url = "http://127.0.0.1:8000/api/event/?format=json"
+url = "http://ictconf.net/api/event/?format=json"
 
 params = dict()
 text = "/Yes utkucan bıyıklı".replace("/Yes", "").split(" ")
